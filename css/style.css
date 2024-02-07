@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+/* COMMON CSS START */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,ul,p,span,ol{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.container{
+    /* width: 1440px; */
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* COMMON CSS END */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 86%); 
+    color: hsl(0, 0%, 8%);
+}
+/* AGE CALCULATOR START */
+#age-calculator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(180, 141, 93); */
+    height: 95vh; 
+}
+#age-calculator .calculator-area{
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* width: 550px; */
+    /* height: 350px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:40px 80px;
+    border-radius: 25px;
+    border-bottom-right-radius: 180px;
+}
+#age-calculator .calculator-area .age-area form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#age-calculator .calculator-area .age-area form ul{
+    margin: 0px 10px;
+}
+#age-calculator .calculator-area .age-area form ul label{
+    color: hsl(0, 1%, 44%);
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 5px;
+    letter-spacing: 3px;
+}
+#age-calculator .calculator-area .age-area form ul input{
+    padding: 15px;
+    width: 120px;
+    font-size: 17px;
+    color: hsl(0, 1%, 44%);
+    border-radius: 8px;
+    border: 1px solid hsl(0, 1%, 44%);
+    outline: none;
+}
+#age-calculator .calculator-area .age-area form ul input::placeholder{
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(0, 1%, 44%);
+}
+#age-calculator .calculator-area .age-area form ul small{
+    font-size: 12px;
+    color: #ad1616;
+    margin-top: 10px;
+    display: block;
+}
+#age-calculator .calculator-area .age-area .age-break{
+    position: relative;
+}
+#age-calculator .calculator-area .age-area .age-break .break{
+    margin: 35px 0px;
+    /* color: hsla(0, 1%, 44%, 0.336); */
+    border: 1px solid hsl(0, 0%, 86%);
+}
+#age-calculator .calculator-area .age-area .age-break .break-icon{
+    position: absolute;
+    right: -2px;
+    top: -20px;
+    background-color:  hsl(259, 100%, 65%);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    transition: 0.50s;
+    cursor: pointer;
+    overflow: hidden;
+}
+#age-calculator .calculator-area .age-area .age-break .break-icon:hover{
+    background-color: hsl(0, 0%, 8%);
+    transform: scale(1.5)
+}
+#age-calculator .calculator-area .age-area .age-break .break-icon img{
+    padding: 10px;
+}
+#age-calculator .calculator-area .age-area .age-result-area{
+    padding: 5px;
+}
+#age-calculator .calculator-area .age-area .age-result-area p{
+    font-size: 56px;
+    font-weight: 800;
+    font-style: italic;
+}
+#age-calculator .calculator-area .age-area .age-result-area p span{
+   color: hsl(259, 100%, 65%);
+   margin-right: 8px;
+}
+/* AGE CALCULATOR END */
+
+/* RESPONSIVE START */
+@media  (max-width: 768px) {
+    #age-calculator {
+        height: 100vh;
+    }
+    #age-calculator .calculator-area {
+        padding: 10px 20px;
+    }
+    #age-calculator .calculator-area .age-area .age-break .break-icon img {
+        padding: 5px;
+        transform: scale(0.8);
+    }
+    #age-calculator .calculator-area .age-area .age-break .break-icon{
+    right: 150px;
+    top: -28px;
+    position: absolute;
+    }
+    #age-calculator .calculator-area .age-area .age-result-area p {
+        font-size: 36px;
+    }
+    #age-calculator .calculator-area .age-area form ul input {
+        padding: 12px;
+        width: 90px;
+        font-size: 14px;
+    }
+}
+/* RESPONSIVE END */
+/* FOOTER STARTS */
+
+footer {
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+footer a{
+    font-weight: 400;
+    color: hsl(0, 1%, 44%);
+}
+footer a:hover{
+    font-weight: 700;
+    color: hsl(259, 100%, 65%);
+}
+
+/* FOOTER ENDS */
